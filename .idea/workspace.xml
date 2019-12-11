@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc86b90-c410-4fc9-a3a5-248e570e0389" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../config/nginx/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+    <list default="true" id="cdc86b90-c410-4fc9-a3a5-248e570e0389" name="Default Changelist" comment="R">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +20,7 @@
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -144,7 +146,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
   </component>
   <component name="RunManager" selected="npm.watch">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -199,12 +201,20 @@
       <option name="presentableId" value="Default" />
       <updated>1575905692762</updated>
       <workItem from="1575905694114" duration="14005000" />
-      <workItem from="1575991842632" duration="1780000" />
+      <workItem from="1575991842632" duration="1936000" />
+      <workItem from="1575993779728" duration="1070000" />
+      <workItem from="1576059381537" duration="275000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
     <state x="419" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575907315622">
@@ -215,6 +225,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="743" y="231" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1050/1920.0.1280.1024@0.0.1920.1050" timestamp="1575907293128" />
+    <state x="558" y="120" key="CommitChangelistDialog2" timestamp="1576059655698">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="558" y="120" key="CommitChangelistDialog2/0.0.1920.1050/1920.0.1280.1024@0.0.1920.1050" timestamp="1576059655698" />
+    <state x="744" y="281" key="FileChooserDialogImpl" timestamp="1576059487110">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="744" y="281" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1280.1024@0.0.1920.1050" timestamp="1576059487110" />
     <state width="1874" height="277" key="GridCell.Tab.0.bottom" timestamp="1575969993368">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -231,13 +249,21 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1874" height="277" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1280.1024@0.0.1920.1050" timestamp="1575969993368" />
-    <state x="457" y="158" key="SettingsEditor" timestamp="1575991947516">
+    <state x="457" y="158" width="1007" height="733" key="SettingsEditor" timestamp="1576059409193">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="457" y="158" key="SettingsEditor/0.0.1920.1050/1920.0.1280.1024@0.0.1920.1050" timestamp="1575991947516" />
-    <state x="639" y="352" key="com.intellij.ide.util.TipDialog" timestamp="1575991843367">
+    <state x="457" y="158" width="1007" height="733" key="SettingsEditor/0.0.1920.1050/1920.0.1280.1024@0.0.1920.1050" timestamp="1576059409193" />
+    <state x="556" y="259" key="Vcs.Push.Dialog.v2" timestamp="1576059516035">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="639" y="352" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1280.1024@0.0.1920.1050" timestamp="1575991843367" />
+    <state x="556" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1280.1024@0.0.1920.1050" timestamp="1576059516035" />
+    <state x="639" y="352" key="com.intellij.ide.util.TipDialog" timestamp="1576059382239">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="639" y="352" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1280.1024@0.0.1920.1050" timestamp="1576059382239" />
+    <state x="100" y="100" width="1720" height="850" key="git4idea.log.GitShowExternalLogAction" timestamp="1576059487760">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="100" y="100" width="1720" height="850" key="git4idea.log.GitShowExternalLogAction/0.0.1920.1050/1920.0.1280.1024@0.0.1920.1050" timestamp="1576059487760" />
   </component>
 </project>
