@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdc86b90-c410-4fc9-a3a5-248e570e0389" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/avitsentovich.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -204,7 +202,7 @@
       <workItem from="1575905694114" duration="14005000" />
       <workItem from="1575991842632" duration="1936000" />
       <workItem from="1575993779728" duration="1070000" />
-      <workItem from="1576059381537" duration="2586000" />
+      <workItem from="1576059381537" duration="3725000" />
     </task>
     <task id="LOCAL-00001" summary="Rename login controller main method.">
       <created>1576059676771</created>
@@ -213,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576059676771</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add registration.">
+      <created>1576064446774</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576064446774</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +230,8 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="Rename login controller main method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename login controller main method." />
+    <MESSAGE value="Add registration." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add registration." />
   </component>
   <component name="WindowStateProjectService">
     <state x="419" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575907315622">
@@ -240,10 +246,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="744" y="451" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.0.1920.1050/1920.0.1280.1024@0.0.1920.1050" timestamp="1576062974375" />
-    <state x="558" y="120" key="CommitChangelistDialog2" timestamp="1576064429031">
+    <state x="558" y="120" key="CommitChangelistDialog2" timestamp="1576064446718">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="558" y="120" key="CommitChangelistDialog2/0.0.1920.1050/1920.0.1280.1024@0.0.1920.1050" timestamp="1576064429031" />
+    <state x="558" y="120" key="CommitChangelistDialog2/0.0.1920.1050/1920.0.1280.1024@0.0.1920.1050" timestamp="1576064446718" />
     <state x="744" y="281" key="FileChooserDialogImpl" timestamp="1576059487110">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -268,10 +274,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="457" y="158" width="1007" height="733" key="SettingsEditor/0.0.1920.1050/1920.0.1280.1024@0.0.1920.1050" timestamp="1576059409193" />
-    <state x="556" y="259" key="Vcs.Push.Dialog.v2" timestamp="1576059737671">
+    <state x="556" y="259" key="Vcs.Push.Dialog.v2" timestamp="1576064449283">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="556" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1280.1024@0.0.1920.1050" timestamp="1576059737671" />
+    <state x="556" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1280.1024@0.0.1920.1050" timestamp="1576064449283" />
     <state x="639" y="352" key="com.intellij.ide.util.TipDialog" timestamp="1576059382239">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

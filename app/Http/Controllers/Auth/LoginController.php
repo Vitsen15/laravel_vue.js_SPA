@@ -5,11 +5,13 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\BadResponseException;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Laravel\Passport\Token;
 
 class LoginController extends Controller
 {
-    public function index(Request $request)
+    public function login(Request $request)
     {
         $http = new Client;
 
@@ -34,5 +36,18 @@ class LoginController extends Controller
 
             return response()->json('Something went wrong on the server.', $e->getCode());
         }
+    }
+
+    /**
+     * @return JsonResponse
+     */
+    public function logout()
+    {
+        auth()->user()->tokens->each(function ($token) {
+            /** @var $token Token */
+            $token->delete();
+        });
+
+        return response()->json('Logged out successfully', 200);
     }
 }
