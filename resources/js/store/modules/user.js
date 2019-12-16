@@ -2,7 +2,7 @@ import {USER_REQUEST, USER_ERROR, USER_SUCCESS} from '../../store/actions/user'
 import {AUTH_LOGOUT} from '../actions/auth'
 import Vue from 'vue'
 
-const state = {status: '', profile: {}};
+const state = {status: null, profile: {}};
 
 const getters = {
     getProfile: state => state.profile,
@@ -14,11 +14,11 @@ const actions = {
         commit(USER_REQUEST);
         axios.get('/user', {}).then(resp => {
             commit(USER_SUCCESS, resp)
+        }).catch(() => {
+            commit(USER_ERROR);
+            commit(AUTH_LOGOUT);
+            dispatch(AUTH_LOGOUT)
         })
-            .catch(() => {
-                commit(USER_ERROR);
-                dispatch(AUTH_LOGOUT)
-            })
     }
 };
 
