@@ -21,7 +21,6 @@ const actions = {
                 password: credentials.password
             }).then(resp => {
                 const token = resp.data.access_token;
-                console.log(token);
                 axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 
                 localStorage.setItem('access_token', token);
