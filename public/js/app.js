@@ -1858,8 +1858,8 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    SqreenFooter: _components_FooterComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
-    Navigation: _components_navigation__WEBPACK_IMPORTED_MODULE_0__["default"]
+    Navigation: _components_navigation__WEBPACK_IMPORTED_MODULE_0__["default"],
+    FooterComponent: _components_FooterComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   name: 'app',
   created: function created() {
@@ -1938,17 +1938,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'sqreen-footer'
+  name: 'footer-component'
 });
 
 /***/ }),
@@ -2085,10 +2076,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'center-container'
 });
@@ -2104,6 +2091,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -6823,7 +6811,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "\nbody {\n  margin: 0;\n  font-family: 'Roboto', sans-serif;\n  color: #2e426b;\n}\nul {\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n}\n", ""]);
+exports.push([module.i, "\nbody {\n    margin: 0;\n    font-family: 'Roboto', sans-serif;\n    color: #2e426b;\n}\nul {\n    margin: 0;\n    padding: 0;\n    list-style-type: none;\n}\n", ""]);
 
 // exports
 
@@ -6842,7 +6830,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "\n.main-container[data-v-f348271a] {\n  min-height: calc(100vh - 70px);\n}\n", ""]);
+exports.push([module.i, "\n.main-container[data-v-f348271a] {\n    min-height: calc(100vh - 70px);\n}\n", ""]);
 
 // exports
 
@@ -6861,7 +6849,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.sq-footer[data-v-abfbddf2] {\n  background-color: rgb(183, 72, 14);\n  height: 20px;\n  font-size: 12px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: end;\n          justify-content: flex-end;\n  color: white;\n  -webkit-box-align: center;\n          align-items: center;\n  padding-right: 1em;\n}\na[data-v-abfbddf2] {\n  color:white;\n}\n", ""]);
+exports.push([module.i, "\n.footer[data-v-abfbddf2] {\n    background-color: rgb(183, 109, 19);\n    font-size: 12px;\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n            align-items: center;\n    padding-right: 1em;\n}\n", ""]);
 
 // exports
 
@@ -6880,7 +6868,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.center-container[data-v-6e149a9e] {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n}\n", ""]);
+exports.push([module.i, "\n.center-container[data-v-6e149a9e] {\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-align: center;\n            align-items: center;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n            flex-direction: column;\n}\n", ""]);
 
 // exports
 
@@ -6899,7 +6887,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.loader[data-v-5c8485b7]{\n  height: 100px;\n  width: 100%;\n  text-align: center;\n  padding: 1em;\n  margin: 0 auto 1em;\n  display: inline-block;\n  vertical-align: top;\n}\nsvg path[data-v-5c8485b7] {\n  fill: #ffa035;\n}\n", ""]);
+exports.push([module.i, "\n.loader[data-v-5c8485b7] {\n    height: 100px;\n    width: 100%;\n    text-align: center;\n    padding: 1em;\n    margin: 0 auto 1em;\n    display: inline-block;\n    vertical-align: top;\n}\nsvg path[data-v-5c8485b7] {\n    fill: #ffa035;\n}\n", ""]);
 
 // exports
 
@@ -38586,7 +38574,7 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c("sqreen-footer")
+      _c("footer-component")
     ],
     1
   )
@@ -38664,11 +38652,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "sq-footer" }, [
-      _vm._v("\n  Made w/ love @ "),
-      _c("a", { attrs: { target: "_blank", href: "https://sqreen.io" } }, [
-        _vm._v("Sqreen")
-      ])
+    return _c("div", { staticClass: "footer" }, [
+      _c("p", { staticClass: "card" }, [_vm._v("Footer")])
     ])
   }
 ]
