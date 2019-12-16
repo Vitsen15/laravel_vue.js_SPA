@@ -7,8 +7,11 @@ import router from './routes'
 import store from './store/storage'
 import Loading from './components/lib/loading'
 import CenterContainer from './components/lib/center-container'
+import auth from "./store/modules/auth";
 
 Vue.config.productionTip = false;
+
+axios.defaults.headers.common['Authorization'] = auth.state.access_token ? `Bearer ${auth.state.access_token}` : '';
 
 Vue.component('loading', Loading);
 Vue.component('center-container', CenterContainer);
