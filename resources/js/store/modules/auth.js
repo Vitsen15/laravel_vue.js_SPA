@@ -2,12 +2,14 @@
 import {AUTH_REQUEST, AUTH_ERROR, AUTH_SUCCESS, AUTH_LOGOUT} from '../actions/auth'
 import {USER_REQUEST} from '../actions/user'
 
-axios.defaults.baseURL = window.config.baseURL;
-
-const state = {access_token: localStorage.getItem('access_token') || '', status: '', hasLoadedOnce: false};
+const state = {
+    access_token: localStorage.getItem('access_token') || null,
+    status: localStorage.getItem('status') || null,
+    hasLoadedOnce: false
+};
 
 const getters = {
-    isAuthenticated: state => !!state.token,
+    isAuthenticated: state => !!state.access_token,
     authStatus: state => state.status
 };
 
@@ -30,6 +32,7 @@ const actions = {
             }).catch(err => {
                 commit(AUTH_ERROR, err);
                 localStorage.removeItem('access_token');
+                localStorage.removeItem('status');
                 reject(err)
             })
         })
@@ -56,7 +59,7 @@ const mutations = {
     },
     [AUTH_SUCCESS]: (state, resp) => {
         state.status = 'success';
-        state.token = resp.data.access_token;
+        state.access_token = resp.data.access_token;
         state.hasLoadedOnce = true
     },
     [AUTH_ERROR]: (state) => {
@@ -64,7 +67,8 @@ const mutations = {
         state.hasLoadedOnce = true
     },
     [AUTH_LOGOUT]: (state) => {
-        state.token = ''
+        state.access_token = null;
+        state.status = null
     }
 };
 
