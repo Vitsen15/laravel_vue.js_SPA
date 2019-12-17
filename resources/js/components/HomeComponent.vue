@@ -2,10 +2,7 @@
     <div>
         <loading v-if="loading"/>
         <div v-if="isAuthenticated">
-            <p>authenticated!!!!!!!!!1</p>
-        </div>
-        <div v-if="!isAuthenticated && authStatus !== 'loading'">
-            <login/>
+            <p>Authenticated!</p>
         </div>
     </div>
 </template>
@@ -24,9 +21,6 @@
             loading: function () {
                 return this.authStatus === 'loading' && !this.isAuthenticated
             }
-        },
-        data() {
-            return ({})
         }
     }
 </script>

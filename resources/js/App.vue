@@ -1,26 +1,27 @@
 <template>
-    <div id="app">
-        <navigation/>
-        <div class="main-container">
+    <div class="container-fluid" id="app">
+        <div class="row">
+            <navigation v-if="isAuthenticated"/>
             <center-container>
                 <router-view/>
             </center-container>
         </div>
-        <footer-component/>
     </div>
 </template>
 
 <script>
-    import Navigation from './components/navigation'
+    import Navigation from './components/NavigationComponent'
     import {USER_REQUEST} from './store/actions/user'
-    import FooterComponent from './components/FooterComponent.vue'
+    import {mapGetters} from "vuex";
 
     export default {
         components: {
-            Navigation,
-            FooterComponent
+            Navigation
         },
         name: 'app',
+        computed: {
+            ...mapGetters(['isAuthenticated', 'authStatus'])
+        },
         created: function () {
             if (this.$store.getters.isAuthenticated) {
                 this.$store.dispatch(USER_REQUEST)
@@ -29,22 +30,8 @@
     }
 </script>
 
-<style>
-    body {
-        margin: 0;
-        font-family: 'Roboto', sans-serif;
-        color: #2e426b;
-    }
-
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-    }
-</style>
-
 <style scoped>
-    .main-container {
-        min-height: calc(100vh - 70px);
+    body {
+        overflow-x: hidden;
     }
 </style>

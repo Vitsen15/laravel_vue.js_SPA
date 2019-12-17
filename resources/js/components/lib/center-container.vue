@@ -1,20 +1,16 @@
 <template>
-    <div class="center-container">
+    <div v-bind:class="isAuthenticated ? 'col-10' : 'col-12'">
         <slot/>
     </div>
 </template>
 
-<style scoped>
-    .center-container {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-</style>
-
-
 <script>
+    import {mapGetters} from "vuex";
+
     export default {
         name: 'center-container',
+        computed: {
+            ...mapGetters(['isAuthenticated', 'authStatus']),
+        }
     }
 </script>
