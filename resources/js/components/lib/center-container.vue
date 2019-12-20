@@ -1,5 +1,5 @@
 <template>
-    <div v-bind:class="isAuthenticated ? 'col-10' : 'col-12'">
+    <div :class="isAuthenticated ? 'col-10' : 'col-12'">
         <slot/>
     </div>
 </template>
