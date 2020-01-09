@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('tests') {
       steps {
-        sh 'phpunit'
+        sh 'vendor/bin/phpunit'
       }
     }
 
