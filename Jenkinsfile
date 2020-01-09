@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('tests') {
+    stage('composer') {
       steps {
-        sh 'vendor/bin/phpunit'
+        sh '/var/lib/jenkins/bin/composer up'
       }
     }
 
